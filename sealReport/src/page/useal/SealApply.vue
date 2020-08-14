@@ -6,7 +6,7 @@
     <Divider orientation="left">
       <small>印章申请</small>
     </Divider>
-    <Form ref="applyForm" :model="applyForm" :label-width="120" label-position="right" style="width: 800px" inline>
+    <Form ref="applyForm" :model="applyForm" :label-width="120" label-position="right" style="width: 800px; text-align: center;" inline>
 
       <FormItem label="部门名称" prop="deptName">
         <Input v-model="applyForm.deptName" v-if=" undefined === user.deptName ||''=== user.deptName" size="small"

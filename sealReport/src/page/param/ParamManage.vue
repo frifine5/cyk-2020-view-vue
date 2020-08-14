@@ -31,7 +31,7 @@
       <small>参数字典查询</small>
     </Divider>
     <div style=" margin-left: 30px; margin-bottom: 10px; ">
-      <Form ref="dicTypeForm" :model="dicTypeForm"  :label-width="80" inline >
+      <Form ref="dicTypeForm" :model="dicTypeForm"  :label-width="80" inline style="text-align: left;">
         <FormItem label="字典类型" prop="name" >
           <Select v-model="dicTypeModel" style="width:100px" size="small" orientation="left" @on-change="selectDicType" >
             <Option v-for="item in dicTypeList" :value="item.value" :key="item.value">{{ item.label }}</Option>

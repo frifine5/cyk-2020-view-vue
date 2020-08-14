@@ -27,6 +27,7 @@ import ApproveSeal from '@/page/usappr/ApproveSeal'
 
 // Test
 import Tuser from '@/page/login/Tuser'
+import Test1 from '@/page/Test1'
 
 
 const originalPush = Router.prototype.push
@@ -43,6 +44,11 @@ export default new Router({
       path: '/test',
       name: 'Tuser',
       component: Tuser
+    },
+    {
+      path: '/test1',
+      name: 'test1',
+      component: Test1
     },
     {
       path: '/helloworld',

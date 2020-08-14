@@ -1,6 +1,6 @@
 <template>
 
-  <Menu :theme="theme" id="leftMenu" @on-select="select" >
+  <Menu :theme="theme"  id="leftMenu" @on-select="select"  width="180px" >
     <div v-for="(m, index) in demoMenus" :key="index" >
       <Submenu v-if="m.children" :name="m.name">
         <template slot="title">
@@ -188,7 +188,10 @@
 
   #leftMenu{
     top: 60px;
-    left: 0;
+    left: 20px;
+    /*background-color: #fafafa;*/
+    margin-right: 20px;
+    text-align: left;
   }
 
 </style>

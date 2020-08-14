@@ -5,7 +5,7 @@
       <small>普通用户</small>
     </Divider>
 
-    <Form ref="formInline" :model="formInline" :rules="ruleInline" :label-width="80" inline>
+    <Form ref="formInline" :model="formInline" :rules="ruleInline" :label-width="80" inline style="text-align: left;">
       <FormItem label="用户名" prop="name">
         <Input v-model="formInline.name" size="small" clearable placeholder="请输入用户名"></Input>
       </FormItem>

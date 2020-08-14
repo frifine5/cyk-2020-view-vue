@@ -4,7 +4,7 @@
         <small>我的印章列表</small>
       </Divider>
       <div style=" margin-left: 30px; margin-bottom: 10px; align-content: left">
-        <Form ref="sealQueryForm" :model="sealQueryForm"  :label-width="80" inline >
+        <Form ref="sealQueryForm" :model="sealQueryForm"  :label-width="80" inline style="text-align: left;" >
           <FormItem label="印章名称" prop="name" >
             <Input v-model="sealQueryForm.sealName" size="small" clearable placeholder="请输入印章名称" />
           </FormItem>
