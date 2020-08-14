@@ -8,6 +8,7 @@ import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
 import './assets/js/global.js'
 import store from './store/index'
+import md5 from 'js-md5'
 
 import axios from 'axios'
 
@@ -24,10 +25,13 @@ Vue.use(ViewUI, {
 });
 
 
-Vue.prototype.$http = axios
-Vue.prototype.$http.defaults.baseURL = '' // `baseURL` 将自动加在 `url` 前面，除非 `url` 是一个绝对 URL
+Vue.prototype.$http = axios;
+Vue.prototype.$http.defaults.baseURL = ''; // `baseURL` 将自动加在 `url` 前面，除非 `url` 是一个绝对 URL
+
+Vue.prototype.$md5= md5;
 
 Vue.config.productionTip = false
+
 
 
 /* eslint-disable no-new */

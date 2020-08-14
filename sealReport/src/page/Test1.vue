@@ -44,6 +44,9 @@
       testLogin(){
         var req = {"userAccount":"宜宾市驻京联络处","passWord":"ddb5dae482528387954e1a3bc7af2ca3"};
 
+        console.log(req);
+        console.log(this.$md5('q2222222'));
+
         var _this = this;
         this.$http.post('/plat/user/webLogin', req).then(function (res) {
 
